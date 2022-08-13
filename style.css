@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #1e1e1e;
+    min-height: 100vh;
+    transition: 0.5s ease-in-out;
+}
+
+.smile-box {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #ee0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+}
+
+.eyes {
+    width: 250px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+}
+
+.eyes .eye {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #000;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition: 0.5s ease-in-out;
+}
+
+.eyes .eye .pupil {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: relative;
+    right: -13px;
+    transition: 0.5s ease-in-out;
+}
+
+.smile {
+    margin-top: 60px;
+    width: 150px;
+    height: 25px;
+    border-radius: 50px;
+    background-color: #000;
+    transition: 0.5s ease-in-out;
+}
+
+.smile-box:hover .smile {
+    border-radius: 0;
+    height: 80px;
+    width: 175px;
+    border-bottom-left-radius: 90px;
+    border-bottom-right-radius: 90px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.smile-box:hover .pupil {
+    right: 0;
+}
